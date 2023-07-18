@@ -18,7 +18,7 @@ public class testBase
 
     @BeforeMethod
     public static void openBrowser() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         actions = new Actions(driver);

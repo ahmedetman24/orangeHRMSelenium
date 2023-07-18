@@ -21,7 +21,8 @@ public class loginPage extends pageBase{
 
     public void login(String url, String username, String password, String title, WebDriver driver, Actions actions, WebDriverWait wait)
     {
-        driver.navigate().to(url);
+        //driver.navigate().to(url);
+        driver.get(url);
 
         wait.until(ExpectedConditions.visibilityOf(userNameTextBox));
         writeText(userNameTextBox, wait, username);
